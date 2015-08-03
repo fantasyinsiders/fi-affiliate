@@ -1,0 +1,58 @@
+DirectoryIndex index.php
+#Options -Indexes
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    
+	# Some accounts require the RewriteBase to be set
+	#RewriteBase /	
+	
+	#RewriteRule ^id/(.+)$ jrox.php?id=$1 [l,nc]
+	
+	# Rewrite rule for WordPress
+	#RewriteRule ^(wp-(content|admin|includes).*) wp/$1 [L]
+	
+	# Rewrite rule for replicated webpages
+	# RewriteRule ^r/(.+)$ jrox.php?rep=$1
+	
+	RewriteCond %{REQUEST_URI} ^/system.*
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)$ index.php?/$1 [L]
+</ifModule>
+
+<ifModule mod_deflate.c>
+	# compress text, html, javascript, css, xml:
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+
+	# Or, compress certain file types by extension:
+	
+	<filesMatch "\.(js|css|html)$">
+		SetOutputFilter DEFLATE
+	</filesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    # Activate mod_expires for this directory
+    ExpiresActive on
+
+    # locally cache common image types for 7 days
+    ExpiresByType image/x-icon "access plus 2592000 seconds"
+	ExpiresByType image/jpeg "access plus 2592000 seconds"
+	ExpiresByType image/png "access plus 2592000 seconds"
+	ExpiresByType image/gif "access plus 2592000 seconds"
+
+    # cache CSS files for 24 hours
+    ExpiresByType text/css "access plus 24 hours"
+</IfModule>
+ 
+

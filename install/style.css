@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:#FFFFFF url(bg.png) repeat-x;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+.notes {
+	border: 1px dotted #666;
+	margin: 1em;
+	padding: 1em 1em 1em 3px;
+	background: #fff; 
+}
+
+.jroxContainer {
+	margin: 1em auto;
+	width: 600px;
+	border: 4px outset #EBEBEB;
+}
+
+.jroxContainer h1 {
+	font-size:16px;
+	padding: 6px 1em;
+	margin: 0;
+	background:#efefef url(titlebg.png) repeat-x;
+}
+
+.jroxContent {
+	padding: 2em;
+	line-height: 1.6em;
+}
+
+.idiv {
+	padding: 1em;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.idiv li {
+	list-style:square;
+	margin-top: 8px;
+	list-style-position:outside;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.strong {
+	font-weight:bold;
+	font-size: 14px;
+}
+
+.style1 {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.topmargin {
+	margin-top: 1em;
+}
+
+.input label {
+	font-size: 13px;
+	text-transform: capitalize;
+	display:block;
+	margin-bottom: 8px;
+}
+
+.error {
+	
+	border: 1px solid #CC0000;
+	padding: 1em;
+	color: #CC3300;
+	background:#FFD7D7;
+	margin: 1em auto;
+	text-transform: capitalize;
+}
+.input label span {
+	font-weight:bold;
+}
+
+.textarea {
+	width: 500px;
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 1px dotted #ccc;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px;
+	background: #fff;
+	color: #666;
+	text-align:left;
+}
+.input input {
+	font-size: 13px;
+	border: 1px dotted #CCCCCC;
+	padding: 3px;
+	width: 300px;
+	background: #D9FFD9;
+	color: #666666;
+}
+
+.continue {
+	display: block;
+	border: 1px solid #efefef;
+	padding: 5px;
+	margin: 1em;
+	font-size: 13px;
+	color: #333;
+	font-weight:bold;
+	background:#efefef url(titlebg.png) repeat-x;
+	width: 200px;
+	text-decoration: none;
+}

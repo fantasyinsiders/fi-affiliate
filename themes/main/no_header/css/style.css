@@ -1,0 +1,214 @@
+
+.dashboard-icons div.box-info:hover {
+	-moz-box-shadow:    1px 1px 2px 2px #ccc;
+  	-webkit-box-shadow: 1px 1px 2px 2px #ccc;
+  	box-shadow:         1px 1px 2px 2px #ccc;
+}
+.alert { text-transform: capitalize; }
+ol.breadcrumb li {  color: #999;}
+ol.breadcrumb li a { color: #999; }
+ol.breadcrumb li a:hover { color: #F60 }
+
+.panel, .box-info {
+	color: #5b5b5b;
+	border: 1px solid #eee;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+
+.panel-heading { text-transform: capitalize; }
+.icon {}
+
+.additional-btn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	z-index: 99999;
+}
+
+.additional-btn a{
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.navbar .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+}
+
+.tab-pane { padding: 20px; max-height: 400px; overflow: auto; }
+
+.program-details strong { text-transform: capitalize; font-weight: 700; }
+
+.copyright { margin-top: 20px; font-size: 10px; }
+
+
+.navbar-collapse.collapse {
+        text-align: center;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+}
+
+.navbar-nav {
+    display:inline-block;
+    float: none;
+    margin: 0;
+}
+
+
+a:hover { text-decoration: none; }
+
+
+#container {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-radius: 2px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	-webkit-transition:All 0.4s ease;
+	-moz-transition:All 0.4s ease;
+	-o-transition:All 0.4s ease;
+}
+	
+ul.faqs li { list-style:outside none}
+.breadcrumb {
+	font-family: 'Open Sans', Arial;
+ 	list-style: none;
+  	border-radius: 4px;
+}
+
+.breadcrumb { font-size: 11px; text-transform: uppercase !important;}
+ol.breadcrumb li {  text-transform: uppercase !important;}
+
+ol.breadcrumb li a:hover { text-decoration:none; }
+
+
+.hover-msg { position: fixed; z-index: 99999; bottom: 25px; right: 5%; min-width: 20%; border-radius: 5px;}
+	
+.logo {
+	padding: 10px 10px 20px 10px;
+	cursor: pointer;	
+}
+
+.btn { text-transform: capitalize; }
+
+/* ==== ENABLE HOVER ON DROPDOWNS INSTEAD OF CLICKS ==== */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+. download-file {
+
+}
+ 
+/* === BOXES === */
+.box-info{
+	position:relative;
+	padding: 15px;
+	margin-bottom: 20px;
+	 border-radius: 4px;
+  
+}
+
+.tool-box .panel {
+	height: 240px;	
+                overflow: hidden;
+}
+
+.dashboard-icons p {
+	font-size: 11px;
+}
+
+.dashboard-icons {
+	text-transform: capitalize;	
+	cursor: pointer;
+}
+
+
+.dashboard-icons .box-info {
+	height: 170px;
+	overflow: hidden;
+}
+
+textarea.error, input.error { border: 1px solid red; }
+label.error { color: #a94442; font-size: 10px; font-family: 'Open Sans', Arial; }
+textarea.error, input.error { 
+	border: 1px solid #a94442; 
+	 -moz-box-shadow:    1px 1px 2px 2px #eee;
+  -webkit-box-shadow: 1px 1px 2px 2px #eee;
+  box-shadow:         1px 1px 2px 2px #eee;
+}
+
+.terms {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 1px solid #eee;	
+	padding: 10px 20px;
+}
+
+.calheading{background-color:#7C8BC0;color:#fff;font-size:11px;font-weight:bold;text-align:center}
+.calnavleft{background-color:#7C8BC0;font-size:10px;font-weight:bold;color:#fff;padding:4px;cursor:pointer}
+.calnavright{background-color:#7C8BC0;font-size:10px;font-weight:bold;color:#fff;text-align:right;padding:4px;cursor:pointer}
+.caldayheading{background-color:#000;color:#fff;font-size:10px;text-align:center;padding:6px 2px 6px 2px}
+.caldaycells,.calendar td{color:#000;background-color:#f4f4f4;font-size:11px;text-align:left;width:100px;cursor:pointer;vertical-align:top;border:1px dotted #eee}
+.calendar td:hover{background:#ddd}
+.caldaycellhover{color:#fff;background-color:#B3BCD4;font-size:11px;text-align:center;padding:4px;border:1px #B3BCD4 solid;cursor:pointer}
+.caldayselected{background-color:#737FAC;color:#fff;font-size:11px;font-weight:bold;text-align:center;border:1px #566188 inset;padding:3px;cursor:pointer}
+.calblanktop{background-color:#fff;padding:4px}
+.calblankbot{background-color:#fff;padding:4px}
+.day{font-size:14px;height:30px;padding:3px}
+.week{height:20px;background:#ccc;font-size:12px;font-weight:bold}
+.events{background:#CCF}
+.smallcaldaycells,.smallcalendar td{background-color:#fff;text-align:center;cursor:pointer;vertical-align:middle;padding:4px;border-right:1px dotted #eee;border-bottom:1px dotted #eee}
+.smallcalendar td:hover{background:#ddd}
+.smallcaldaycellhover{text-align:center;padding:4px;cursor:pointer}
+.smallcaldayselected{font-weight:bold;text-align:center;padding:3px;cursor:pointer}
+.smallday{font-size:11px}
+.smallweek{background:#ddd;font-size:12px;font-weight:bold}
+.smallevents{font-weight:bold;background-color:#E4E4E4}
+
+#top-menu .navbar-default{
+	border: none;
+	background-color: #fff;
+	margin: 0;
+	font-size: 90%;
+}
+
+@media (max-width: 320px){
+	
+	.block-phone { 
+		display: block;
+  		width: 100%;
+  		padding-right: 0;
+  		padding-left: 0;
+		margin-top: 5px;	
+	 }
+	 
+	 .box-info {
+		overflow: auto;
+	 }	
+	 .navbar .divider-vertical { display:none; }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    /* JROX Code */
+	
+	.block-phone { 
+		display: block;
+  		width: 100%;
+  		padding-right: 0;
+  		padding-left: 0;
+		margin-top: 5px;	
+	 }
+		
+	 .box-info {
+		overflow: auto;
+	 }	
+	 .navbar .divider-vertical { display:none; }
+}
+
+.panel-body {
+		overflow: auto;
+	 }	

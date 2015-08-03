@@ -1,0 +1,18 @@
+<?php
+$program_value = '';
+$url = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+
+if (!empty($url['path']))
+{
+	$id = str_replace('/','',$url['path']);
+	$program = $id . '_{program_id}';
+	$program_value = base64_encode($program);
+	$cookie_expires = 1 * 60 * 60 * 24 * {cookie_timer};
+	$cookie_domain = '.{remote_domain_name}'; //DON'T FORGET THE . (dot) before the domain
+	setcookie('{program_cookie_name}', $program_value, time()+$cookie_expires,"/", $cookie_domain);
+}
+
+//header("HTTP/1.1 301 Moved Permanently");
+header("Location:{url_redirect}" . $program);
+
+?>
